@@ -1,0 +1,13 @@
+body{margin:0;font:12px/1 "微软雅黑";color: #666;}
+h1,h2,h3,h4,h5,h6{margin:0;font-size:12px;font-weight:normal;}
+p,dl,dd{ margin:0;}
+ul,ol{list-style:none;margin:0;padding:0;}
+a{text-decoration:none; color:#333;padding: 0 8px;}
+a:hover{
+    color: #f5004b;
+}
+em,i{ font-style:normal;}
+strong,b{ font-weight:normal;}
+img{border:none;vertical-align:middle;}
+.clearfix{*zoom:1;}
+.clearfix:after{content:"";clear:both; display:block;}

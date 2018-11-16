@@ -1,0 +1,166 @@
+/*----------------------------shade----------------------------*/
+#shade{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index: 100;
+    background-color: rgba(0,0,0,.5);
+}
+#shade img{
+    margin: 50px 250px;
+}
+
+
+/*-------------------------------right_fixed-------------------*/
+.right_fixed{
+    padding-top: 120px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 36px;
+    background-color: #5C5C5C;
+    height: 660px;
+}
+.right_fixed hr{
+    width:28px;
+    height: 1px;
+    background-color: #ccc;
+    border:none;
+    margin-left:4px;
+}
+.right_fixed div{
+    position: relative;
+    width: 100%;
+    line-height: 36px;
+}
+
+.right_fixed div:hover{
+    background-color: black;
+}
+.right_fixed div:hover .rf_hover{
+    display: block;
+    overflow: hidden;
+    animation:rfhover .2s linear;
+}
+.right_fixed div:hover span{
+    display: inline-block;
+}
+.right_fixed i{
+    font-size:24px;
+    color: white;
+    margin-left:5px;
+}
+.right_fixed .r_sc b{
+    display: inline-block;
+    color: white;
+    width: 16px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 16px;
+}
+@keyframes rfhover{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85px;
+    }
+}
+.right_fixed div.rf_hover{
+    position: absolute;
+    right: 36px;
+    top:0;
+    display: none;
+    font-size: 14px;
+    color: #666;
+    line-height: 36px;
+    text-align: center;
+    width: 85px;
+    height: 34px;
+    background-color:white;
+    z-index:20;
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.right_fixed span{
+    position: absolute;
+    right:32px;
+    top: 12px;
+    display: none;
+    width: 10px;
+    height: 10px;
+    background-color:white;
+    transform: rotate(45deg);
+}
+/*二维码*/
+.right_fixed .r_ma .erweima{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    width: 140px;
+    top:0;
+    right:36px;
+}
+.right_fixed .r_ma:hover .erweima{
+    display: block;
+    animation:ewm .2s linear;
+}
+@keyframes ewm{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:140px;
+    }
+}
+.right_fixed div.null:hover{
+    background-color: #5C5C5C;
+}
+
+/*-------------------------------scroll---------------------*/
+.scroll{
+    position:absolute;
+    display: none;
+    left: 0;
+    width: 62px;
+    height: 530px;
+    border:1px solid #ccc;
+    text-align: center;
+    color: #666;
+    background-color: white;
+}
+.scroll h1{
+    font-weight: bold;
+    color: #5E5E5E;
+    height: 32px;
+    font-size: 14px;
+    line-height: 30px;
+    background-color: #F6F6F6;
+}
+.scroll li{
+    position: relative;
+    border-top: 1px solid #ccc;
+    height:30px;
+    padding:6px 0;
+    line-height: 16px;
+}
+.scroll li.ud{
+    height:21px;
+    font-size:30px;
+}
+.scroll li:hover{
+    color: #F5004B;
+}
+.scroll .sli span.si{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: url("../images/ui2.png") no-repeat -154px 0;
+}
